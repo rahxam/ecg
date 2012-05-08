@@ -1,0 +1,33 @@
+﻿Der Buildvorgang wurde am 08.05.2012 17:29:11 gestartet.
+     1>Projekt "C:\Users\maxi\Desktop\git\ecg\aufgabe_2\02_graph_prog\build\vs2010\graph_prog.vcxproj" auf Knoten "2", build Ziel(e).
+     1>InitializeBuildStatus:
+         "Debug\graph_prog.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../include /I../../dependencies/freeglut/include /I../../dependencies/qdbmp/include /ZI /nologo /W3 /WX- /Od /Oy- /D NDEBUG /D _CONSOLE /D FREEGLUT_STATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\cube_system.cpp
+         cube_system.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\maxi\Desktop\git\ecg\aufgabe_2\02_graph_prog\build\vs2010\Debug\graph_prog.exe" /NOLOGO /LIBPATH:../../dependencies/freeglut/lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\graph_prog.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\maxi\Desktop\git\ecg\aufgabe_2\02_graph_prog\build\vs2010\Debug\graph_prog.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\maxi\Desktop\git\ecg\aufgabe_2\02_graph_prog\build\vs2010\Debug\graph_prog.lib" /MACHINE:X86 Debug\application.obj
+         Debug\main.obj
+         Debug\abstract_scene.obj
+         Debug\cube_system.obj
+         Debug\cube_system_split.obj
+         Debug\recursive_cubes.obj
+         Debug\terrain.obj
+         Debug\example_3d_primitives.obj
+         Debug\example_cons_primitives.obj
+         Debug\example_primitives.obj
+         Debug\example_trans_order.obj
+         Debug\qdbmp.obj
+         LINK : C:\Users\maxi\Desktop\git\ecg\aufgabe_2\02_graph_prog\build\vs2010\Debug\graph_prog.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+     1>LINK : warning LNK4098: Standardbibliothek "LIBCMT" steht in Konflikt mit anderen Bibliotheken; /NODEFAULTLIB:Bibliothek verwenden.
+         graph_prog.vcxproj -> C:\Users\maxi\Desktop\git\ecg\aufgabe_2\02_graph_prog\build\vs2010\Debug\graph_prog.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\maxi\Desktop\git\ecg\aufgabe_2\02_graph_prog\build\vs2010\Debug\graph_prog.exe;#1" /manifest Debug\graph_prog.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Die Datei "Debug\graph_prog.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Debug\graph_prog.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Users\maxi\Desktop\git\ecg\aufgabe_2\02_graph_prog\build\vs2010\graph_prog.vcxproj" ist abgeschlossen, build Ziel(e).
+
+Das Erstellen war erfolgreich.
+
+Verstrichene Zeit 00:00:00.88

@@ -59,11 +59,35 @@ void cube_system::render_system()
 				   Variable für Rotationen analog zu den Angaben im gegebenen Transformationsbaum.
 	*********/
 
+	glPushMatrix();
+	glRotated(angle, 0, -1, 0);
+	cube_system::render_cube();
+	glPopMatrix();
+
+	glRotated(-angle, 0, -1, 0);
+	glTranslated(5, 0, 0);
+	glScaled(0.6, 0.6, 0.6);
+	cube_system::render_cube();
+	
+	glPushMatrix();
+
+	glRotated(2*angle, 0, 0, -1);
+	glTranslated(3, 0, 0);
+	glScaled(0.5, 0.5, 0.5);
+	cube_system::render_cube();
+
+	glPopMatrix();
+
+	glRotated(2*angle+180, 0, 0, -1);
+	glTranslated(3, 0, 0);
+	glScaled(0.5, 0.5, 0.5);
+	cube_system::render_cube();
+
 
 	// Remove the following statement (if wanted) as it just serves 2.1.1.
 	// Entfernen Sie die folgende Anweisung gegebenenfalls, da sie lediglich dem Testen
 	// von Aufgabe 2.1.1 dient.
-	render_cube();
+	//render_cube();
 }
 
 
@@ -84,6 +108,51 @@ void cube_system::render_cube()
                    erstellen Sie Vertices und Farben für alle 6 Seiten. Der Wuerfel soll
 				   von (-1, -1, -1) bis (1, 1, 1) reichen.
 	*********/
+	glBegin(GL_QUADS);
+		
+		//Dach
+		glColor3d(1, 0, 0); //rot
+		glVertex3d(-1.0,+1.0,-1.0);
+		glVertex3d(-1.0,+1.0,+1.0);	
+		glVertex3d(+1.0,+1.0,+1.0);
+		glVertex3d(+1.0,+1.0,-1.0);
+
+		//Hinten Links
+		glColor3d(0, 1, 0); //gruen
+		glVertex3d(-1.0,+1.0,+1.0);
+		glVertex3d(+1.0,+1.0,+1.0);	
+		glVertex3d(+1.0,-1.0,+1.0);
+		glVertex3d(-1.0,-1.0,+1.0);
+
+		//Boden
+		glColor3d(0, 0, 1); //blau
+		glVertex3d(-1.0,-1.0,+1.0);
+		glVertex3d(+1.0,-1.0,+1.0);	
+		glVertex3d(+1.0,-1.0,-1.0);
+		glVertex3d(-1.0,-1.0,-1.0);
+
+		//Vorne Rechts
+		glColor3d(1, 1, 0); //gelb
+		glVertex3d(-1.0,-1.0,-1.0);
+		glVertex3d(+1.0,-1.0,-1.0);	
+		glVertex3d(+1.0,+1.0,-1.0);
+		glVertex3d(-1.0,+1.0,-1.0);
+
+		//Hinten Rechts
+		glColor3d(0, 1, 1); //hellblau
+		glVertex3d(-1.0,+1.0,-1.0);
+		glVertex3d(-1.0,+1.0,+1.0);	
+		glVertex3d(-1.0,-1.0,+1.0);
+		glVertex3d(-1.0,-1.0,-1.0);
+
+		//Vorne Links
+		glColor3d(1, 0, 1); //lila
+		glVertex3d(+1.0,-1.0,+1.0);
+		glVertex3d(+1.0,-1.0,-1.0);	
+		glVertex3d(+1.0,+1.0,-1.0);
+		glVertex3d(+1.0,+1.0,+1.0);
+		
+	glEnd();
 }
 
 
