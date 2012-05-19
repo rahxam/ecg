@@ -200,22 +200,33 @@ void terrain::render_terrain()
 	               Methode "render_solid_terrain". Spezifizieren Sie in dieser Methode pro
 				   Vertex eine Texturkoordinate mittels der Methode "glTexCoord2d".
    *********/
+	int tester = 0;
 
-
+	glBegin(GL_TRIANGLE_STRIP); 
+	glColor3d(0,0,0);
+	glVertex3d(0,0,0.0);
+	glColor3d(1,0,0);
+	glVertex3d(10,10,0.0);
+	glColor3d(1,1,0);
+	glVertex3d(20,0,0.0);
+	glColor3d(1,0,1);
+	glVertex3d(30,10,0.0);
+	glColor3d(0,1,0);
+	glVertex3d(40,0,0.0);
+	glColor3d(1,1,1);
+	glVertex3d(50,10,0.0);
+	glEnd();
 	// Go through all rows (-1)
 	for (int y = 0; y<map_height-1; y++) {
 
 		// ... to be completed
+			// Draw one strip
+			for (int x = 0; x<map_width; x++) {
 
-		// Draw one strip
-		for (int x = 0; x<map_width; x++) {
-
-			// ... to be completed
-
-		}
-
+				// ... to be completed
+			}
+			
 	}
-
 	glPopMatrix();
 }
 
